@@ -1,0 +1,32 @@
+/* Header Start         Header Start        Header Start        Header Start*/
+
+.blog-menu li {
+    display: inline-block;
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.logo .logo-image {
+    width: 8rem;
+}
+
+/* Header end       Header end      Header end      Header end      Header end*/
+
+/* main start       main start      main start      main start      main start */
+
+
+/* Bannrer section start    Bannrer section start       Bannrer section start  */
+#banner article p {
+    font-size: 1.6rem;
+    word-spacing: 0.5rem;
+}
+
+.aside-img img {
+    width: auto;
+}
+
+/*Bannrer section end   Bannrer section end     Bannrer section end     Bannrer section end*/
+
+
+/* main end         main end        main end        main end        main end*/

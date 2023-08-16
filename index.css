@@ -1,0 +1,451 @@
+/* Basic common code start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html {
+    background-color: #fff;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* font-family: 'Italianno', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+body {
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
+    background-color: #fafa;
+    box-shadow: 0.2rem 0.2rem 0.2rem black, -0.2rem -0.2rem 0.2rem black;
+}
+
+.doted {
+    border: 1rem dotted rgb(11, 226, 47);
+    border-bottom: none;
+    margin: 0.5rem auto;
+    width: 17rem;
+}
+
+.about-me-head,
+.archive-head,
+.blog-post-head,
+.about-head {
+    text-align: center;
+    font-size: 6rem;
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+/* Basic common code end        Basic common code end       Basic common code end*/
+
+/* Header Start         Header Start        Header Start        Header Start*/
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+
+.logo .logo-image {
+    height: auto;
+    width: 7rem;
+    border: 0.5rem solid wheat;
+    border-radius: 50%;
+}
+
+.blog-menu li {
+    display: inline-block;
+    margin-right: 0.2rem;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.4s;
+    justify-content: right
+}
+
+.blog-menu li:last-child {
+    margin-right: 0;
+}
+
+.blog-menu li:hover {
+    background-color: gray;
+}
+
+
+/* Header end       Header end      Header end      Header end      Header end*/
+
+
+/* main start       main start      main start      main start      main start */
+
+/* Bannrer section start    Bannrer section start       Bannrer section start  */
+
+#banner {
+    margin: 1rem 2rem;
+    padding: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner article {
+    width: 95%;
+    text-align: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+
+    background-image: url(images/back.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#banner article h1 {
+    font-size: 3rem;
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#banner article p {
+    text-align: justify;
+    font-size: 1.2rem;
+    word-spacing: 0.2rem;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#banner aside {
+    width: 95%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.aside-img img{
+    border: 0.4rem solid black;
+    width: 100%;
+}
+
+/*Bannrer section end   Bannrer section end     Bannrer section end     Bannrer section end*/
+
+/* About-me section start       About-me section start      About-me section start*/
+
+#about-me {
+    background-color: rgba(71, 68, 255, 0.333);
+    min-height: 95vh;
+}
+
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #4c4c4c;
+    border-radius: 1rem;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+    word-spacing: 0.3rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+}
+
+.card button {
+    background-color: chartreuse;
+    border: 0.3rem solid rgb(10, 10, 4);
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem white, -0.3rem -0.3rem 0.3rem white;
+
+    align-self: center;
+    min-width: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card button:hover {
+    transform: scale(1.2);
+}
+
+/* About-me section end       About-me section end     About-me section end  */
+
+/* Archive section start      Archive section start            Archive section start   */
+
+#archive {
+    background-color: #4e4e4f;
+    min-height: 40vh;
+}
+
+.archive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.archive-ul {
+    flex-direction: column;
+    border-top: 0.3rem solid white;
+    border-bottom: 0.3rem solid white;
+    margin-bottom: 1rem;
+    margin: 0.5rem;
+}
+
+.archive-ul:last-child {
+    margin-right: 2rem;
+}
+
+.archive-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.archive-ul img {
+    width: 80%;
+    height: 80%;
+    margin: 0.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5rem;
+
+}
+
+/* Archive section end      Archive section end      Archive section end    Archive section end*/
+
+/* Blog-post section start      Blog-post section start     Blog-post section start*/
+
+#post {
+    background-color: #85929E;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.post {
+    width: 75%;
+    display: flex;
+    margin: 1.5rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: transform 0.4s;
+    flex-direction: column;
+}
+
+.post:hover {
+    transform: scale(1.07);
+}
+
+.ba-img {
+    flex: 1;
+    padding: 0.1rem;
+}
+
+.ba-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.b-article {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.post-head {
+    font-size: 3rem;
+    color: #fff;
+    display: inline-block;
+
+    margin-bottom: 1rem;
+}
+
+.p-sub-h {
+    font-size: 2.4rem;
+    color: #fff;
+    display: inline-block;
+
+    margin-bottom: 1rem;
+}
+
+.b-article p {
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+    font-family: 'Dancing Script', cursive;
+    color: aliceblue;
+    margin-bottom: 0.5rem;
+}
+
+.b-p-btn {
+    background-color: rgb(65, 92, 39);
+    border: 0.1rem solid rgb(10, 10, 4);
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem white, -0.1rem -0.1rem 0.1rem white;
+
+
+    width: 90%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Blog-post section end     Blog-post section end       Blog-post section end*/
+
+/* Contact section start        Contact section start       Contact section start*/
+
+#contact {
+    min-height: 75vh;
+    background-color: rgba(63, 39, 63, 0.633);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5rem 1rem;
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem white, -0.3rem 0rem 0.3rem white;
+}
+
+.a-l-n {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem
+}
+
+.about-label {
+    flex: 0.3;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+input,
+textarea {
+    flex: 0.7;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+
+}
+
+textarea {
+    resize: none;
+    height: 14vh;
+}
+
+
+
+.bbb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bbb button {
+    background-color: #6665e6;
+    border: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+/* Contact section end      Contact section     Contact section end     Contact section end */
+
+/* main end         main end        main end        main end        main end*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    flex-direction: column;
+
+}
+
+.footer-left .f-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.6rem;
+
+}
+
+.f-icon li .btn {
+    padding: 0.2rem;
+    border: none;
+    margin: 0.6rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.footer-right {
+    color: #fff;
+    margin: 0.6rem;
+    padding: 0.3rem;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,67 @@
+/* Header Start         Header Start        Header Start        Header Start*/
+.blog-menu li {
+    display: inline-block;
+    margin-right: 2.5rem;
+    font-size: 2.5rem;
+    padding: 0.9rem;
+}
+
+.logo .logo-image {
+    width: 10rem;
+}
+
+/* Header end       Header end      Header end      Header end      Header end*/
+
+/* main start       main start      main start      main start      main start */
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    min-height: auto;
+}
+
+#banner article {
+    width: 50%;
+    margin-right: 2rem;
+
+}
+
+#banner aside {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+#banner article p {
+    font-size: 2rem;
+    word-spacing: 0.9rem;
+}
+
+.aside-img img {
+    height: 100vh;
+    width: 55rem;
+}
+
+/* About-me section start      About-me section start      About-me section start  */
+
+.card-container {
+
+    flex-direction: row;
+}
+
+.card p {
+    font-size: 1.9rem;
+    word-spacing: 0.7rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+}
+
+/* About-me section end       About-me section end     About-me section end  */
+
+/* Contact section start        Contact section start       Contact section start*/
+
+.about-container {
+    width: 40%;
+}
+
+/* Contact section end      Contact section     Contact section end     Contact section end */
