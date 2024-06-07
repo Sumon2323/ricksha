@@ -43,7 +43,9 @@ body {
     padding: 3rem;
     margin: 3rem;
 }
-
+a{
+    text-decoration: none;
+}
 /* Basic common code end        Basic common code end       Basic common code end*/
 
 /* Header Start         Header Start        Header Start        Header Start*/
@@ -68,23 +70,23 @@ header {
     border-radius: 50%;
 }
 
+.blog-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 .blog-menu li {
     display: inline-block;
-    margin-right: 0.2rem;
-    font-size: 1.2rem;
-    padding: 0.2rem;
-    border: none;
-    border-radius: 1rem;
-    transition: all 0.4s;
-    justify-content: right
+    margin-right: 20px;
 }
 
 .blog-menu li:last-child {
     margin-right: 0;
 }
 
-.blog-menu li:hover {
-    background-color: gray;
+.blog-menu a {
+    color: #fef5f5;
 }
 
 

@@ -10,6 +10,10 @@
 .logo .logo-image {
     width: 8rem;
 }
+.blog-menu {
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Header end       Header end      Header end      Header end      Header end*/
 
